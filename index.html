@@ -8,7 +8,7 @@
   <title>Mike's Painting and Drywall - Houston</title>
 
   <meta name="description"
-    content="Mike's Painting and Drywall - Houston offers painting, drywall installation, and repair services in Houston, TX 77017. Call (713) 418-0160.">
+    content="Mike's Painting and Drywall - Houston provides painting, drywall installation, and repair services in Houston, TX 77017. Call (713) 418-0160.">
 
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#10191f">
@@ -17,7 +17,6 @@
   <link rel="canonical" href="https://example.com/">
 
   <style>
-    /* RESET */
     * {
       margin: 0;
       padding: 0;
@@ -45,7 +44,6 @@
       color: inherit;
     }
 
-    /* FULL-SCREEN HERO */
     .hero {
       position: relative;
       isolation: isolate;
@@ -54,7 +52,7 @@
       width: 100%;
       min-height: 100vh;
       min-height: 100svh;
-      padding: 35px 7%;
+      padding: 32px 7%;
       overflow: hidden;
 
       background:
@@ -72,7 +70,7 @@
     .content {
       position: relative;
       z-index: 1;
-      width: min(760px, 75%);
+      width: min(780px, 78%);
     }
 
     /* BUSINESS BRAND */
@@ -80,17 +78,17 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     .brand-icon {
       flex-shrink: 0;
       color: var(--blue);
-      font-size: 46px;
+      font-size: 43px;
     }
 
     .brand h2 {
-      font-size: clamp(20px, 2.3vw, 31px);
+      font-size: clamp(20px, 2.2vw, 30px);
       line-height: 1.2;
       font-weight: 900;
       letter-spacing: -0.7px;
@@ -98,18 +96,18 @@
 
     .brand .tagline {
       display: block;
-      margin-top: 8px;
+      margin-top: 7px;
       color: var(--blue);
-      font-size: 11px;
+      font-size: 10px;
       font-weight: bold;
       letter-spacing: 2.5px;
     }
 
-    /* HERO CONTENT */
+    /* INTRODUCTION */
     .eyebrow {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       color: #c3d0d9;
-      font-size: 12px;
+      font-size: 11px;
       line-height: 1.8;
       letter-spacing: 2.5px;
       text-transform: uppercase;
@@ -121,10 +119,10 @@
 
     h1 {
       max-width: 750px;
-      margin-bottom: 22px;
-      font-size: clamp(42px, 5.3vw, 72px);
-      line-height: 1.05;
-      letter-spacing: -2.5px;
+      margin-bottom: 17px;
+      font-size: clamp(40px, 4.8vw, 66px);
+      line-height: 1.04;
+      letter-spacing: -2px;
       font-weight: 900;
     }
 
@@ -134,27 +132,27 @@
 
     .description {
       max-width: 570px;
-      margin-bottom: 27px;
+      margin-bottom: 20px;
       color: var(--muted);
-      font-size: clamp(15px, 1.3vw, 18px);
-      line-height: 1.8;
+      font-size: clamp(14px, 1.2vw, 17px);
+      line-height: 1.7;
     }
 
     /* SERVICES */
     .services {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 30px;
+      gap: 8px;
+      margin-bottom: 22px;
     }
 
     .service {
-      padding: 11px 13px;
+      padding: 9px 11px;
       border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 6px;
       background: rgba(255, 255, 255, 0.06);
       color: #f0f5f9;
-      font-size: 12px;
+      font-size: 11px;
     }
 
     .service strong {
@@ -167,21 +165,21 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 17px;
     }
 
     .call-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 11px;
-      padding: 17px 24px;
+      gap: 10px;
+      padding: 15px 21px;
       border: 1px solid var(--blue);
       border-radius: 5px;
       background: var(--blue);
-      box-shadow: 0 10px 35px rgba(22, 140, 255, 0.22);
+      box-shadow: 0 10px 30px rgba(22, 140, 255, 0.22);
       color: var(--white);
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 800;
       text-decoration: none;
       transition: background 0.25s ease, transform 0.25s ease;
@@ -189,20 +187,21 @@
 
     .call-btn:hover {
       background: #0875dd;
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
 
     .call-btn:focus-visible,
-    .location a:focus-visible {
+    .location a:focus-visible,
+    .profiles a:focus-visible {
       outline: 3px solid white;
       outline-offset: 4px;
     }
 
     .location {
       color: #c3cdd5;
-      font-size: 13px;
+      font-size: 12px;
       font-style: normal;
-      line-height: 1.8;
+      line-height: 1.7;
     }
 
     .location strong {
@@ -218,27 +217,69 @@
       text-decoration: underline;
     }
 
-    /* FOOTER */
-    .bottom-note {
-      margin-top: 30px;
-      color: #9ba8b2;
+    /* BUSINESS PROFILE LINKS */
+    .profiles {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .profiles-label {
+      width: 100%;
+      color: #aebdc8;
       font-size: 10px;
-      line-height: 1.8;
-      letter-spacing: 1.5px;
+      font-weight: bold;
+      letter-spacing: 2px;
       text-transform: uppercase;
     }
 
-    /* MOBILE RESPONSIVENESS */
+    .profiles a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 9px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.06);
+      color: white;
+      font-size: 12px;
+      text-decoration: none;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .profiles a:hover {
+      background: rgba(22, 140, 255, 0.16);
+      border-color: var(--blue);
+    }
+
+    .profiles .profile-icon {
+      color: #70baff;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    .bottom-note {
+      margin-top: 20px;
+      color: #9ba8b2;
+      font-size: 9px;
+      line-height: 1.8;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    /* MOBILE */
     @media (max-width: 700px) {
       .hero {
         min-height: 100svh;
-        padding: 28px 22px;
-
+        padding: 25px 20px;
         background:
           linear-gradient(
             90deg,
-            rgba(10, 18, 23, 0.96),
-            rgba(10, 18, 23, 0.84)
+            rgba(10, 18, 23, 0.97),
+            rgba(10, 18, 23, 0.87)
           ),
           url("https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=85")
           center / cover no-repeat;
@@ -251,87 +292,67 @@
       .brand {
         align-items: flex-start;
         gap: 10px;
-        margin-bottom: 32px;
+        margin-bottom: 27px;
       }
 
       .brand-icon {
-        font-size: 32px;
+        font-size: 30px;
       }
 
       .brand h2 {
-        font-size: clamp(19px, 5vw, 26px);
+        font-size: clamp(19px, 5vw, 25px);
         letter-spacing: -0.4px;
       }
 
       .brand .tagline {
-        font-size: 10px;
-        letter-spacing: 2px;
+        font-size: 9px;
+        letter-spacing: 1.7px;
       }
 
       .eyebrow {
-        font-size: 10px;
+        font-size: 9px;
         letter-spacing: 1.5px;
       }
 
       h1 {
-        font-size: clamp(38px, 10vw, 55px);
-        letter-spacing: -1.5px;
+        font-size: clamp(36px, 9vw, 51px);
+        letter-spacing: -1.4px;
       }
 
       .description {
-        font-size: 15px;
-        line-height: 1.7;
+        font-size: 14px;
+        line-height: 1.65;
       }
 
       .services {
-        gap: 8px;
+        gap: 7px;
       }
 
       .service {
-        padding: 9px 10px;
-        font-size: 11px;
+        padding: 8px 9px;
+        font-size: 10px;
       }
 
       .actions {
         align-items: stretch;
         flex-direction: column;
-        gap: 14px;
+        gap: 12px;
       }
 
       .call-btn {
         width: 100%;
-        padding: 16px 10px;
-        font-size: 14px;
+        padding: 15px 8px;
+        font-size: 13px;
       }
 
-      .bottom-note {
-        margin-top: 22px;
-      }
-    }
-
-    /* SHORT DESKTOP SCREENS */
-    @media (max-height: 720px) and (min-width: 701px) {
-      .hero {
-        padding-top: 20px;
-        padding-bottom: 20px;
+      .profiles {
+        gap: 8px;
+        margin-top: 17px;
       }
 
-      .brand {
-        margin-bottom: 20px;
-      }
-
-      h1 {
-        font-size: clamp(36px, 4.5vw, 58px);
-        margin-bottom: 14px;
-      }
-
-      .description {
-        margin-bottom: 16px;
-        line-height: 1.6;
-      }
-
-      .services {
-        margin-bottom: 18px;
+      .profiles a {
+        padding: 9px 10px;
+        font-size: 11px;
       }
 
       .bottom-note {
@@ -339,7 +360,40 @@
       }
     }
 
-    /* ACCESSIBILITY */
+    /* SHORT DESKTOP SCREENS */
+    @media (max-height: 720px) and (min-width: 701px) {
+      .hero {
+        padding-top: 17px;
+        padding-bottom: 17px;
+      }
+
+      .brand {
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        font-size: clamp(34px, 4.2vw, 54px);
+        margin-bottom: 11px;
+      }
+
+      .description {
+        margin-bottom: 13px;
+        line-height: 1.55;
+      }
+
+      .services {
+        margin-bottom: 14px;
+      }
+
+      .profiles {
+        margin-top: 12px;
+      }
+
+      .bottom-note {
+        margin-top: 12px;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       html {
         scroll-behavior: auto;
@@ -355,15 +409,12 @@
 </head>
 
 <body>
-
   <main>
     <section class="hero" aria-labelledby="main-heading">
-
       <div class="content">
 
         <header class="brand">
           <span class="brand-icon" aria-hidden="true">⌂</span>
-
           <div>
             <h2>Mike's Painting and Drywall - Houston</h2>
             <span class="tagline">
@@ -411,7 +462,6 @@
         </section>
 
         <div class="actions">
-
           <a
             class="call-btn"
             href="tel:+17134180160"
@@ -428,18 +478,60 @@
             United States<br>
             <a href="tel:+17134180160">(713) 418-0160</a>
           </address>
-
         </div>
+
+        <nav class="profiles" aria-label="Business profiles">
+          <p class="profiles-label">Find us online</p>
+
+          <a
+            href="https://maps.app.goo.gl/K1Hcejny8P4wpBv59"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Mike's Painting and Drywall on Google Maps"
+          >
+            <span class="profile-icon" aria-hidden="true">G</span>
+            Google Maps
+          </a>
+
+          <a
+            href="https://www.yelp.ie/biz/mikes-painting-and-drywall-houston-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Mike's Painting and Drywall on Yelp"
+          >
+            <span class="profile-icon" aria-hidden="true">Y</span>
+            Yelp
+          </a>
+
+          <a
+            href="https://www.mapquest.com/us/texas/mikes-painting-and-drywall-646077710"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Mike's Painting and Drywall on MapQuest"
+          >
+            <span class="profile-icon" aria-hidden="true">M</span>
+            MapQuest
+          </a>
+
+          <a
+            href="https://www.expatriates.com/cls/63897779.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Mike's Painting and Drywall on Expatriates"
+          >
+            <span class="profile-icon" aria-hidden="true">E</span>
+            Expatriates
+          </a>
+        </nav>
 
         <footer class="bottom-note">
           Mike's Painting and Drywall - Houston
           <span aria-hidden="true"> · </span>
-          Quality craftsmanship
+          Houston, Texas
         </footer>
 
       </div>
     </section>
   </main>
-
 </body>
 </html>
