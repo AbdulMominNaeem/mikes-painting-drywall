@@ -1,144 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mike's Painting & Drywall | Houston, TX</title>
-<meta name="description" content="Mike's Painting and Drywall provides painting and drywall services in Houston, TX 77017. Call (713) 418-0160 to discuss your project.">
-<meta name="theme-color" content="#142a43">
-<link rel="preconnect" href="https://images.unsplash.com">
-<style>
-:root{--ink:#fffdf8;--muted:#e4e8ee;--green:#142a43;--orange:#f5bd45;--line:rgba(255,253,248,.24)}
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{width:100%;min-height:100%;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--green);color:var(--ink)}
-a{color:inherit}
-.screen{position:relative;isolation:isolate;min-height:100svh;height:100svh;overflow:hidden;display:flex;flex-direction:column;padding:clamp(18px,3vh,32px) clamp(20px,5vw,78px);background:linear-gradient(90deg,rgba(16,35,57,.98) 0%,rgba(16,35,57,.92) 46%,rgba(16,35,57,.72) 75%,rgba(16,35,57,.46) 100%),url("https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat}
-.topbar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:18px;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
-.brand-mark{display:grid;place-items:center;width:46px;height:46px;flex:none;background:var(--orange);color:#142a43;font-size:27px;font-weight:900;clip-path:polygon(0 0,100% 0,100% 76%,76% 100%,0 100%)}
-.brand-name{font-size:clamp(15px,1.45vw,21px);font-weight:900;letter-spacing:-.5px;line-height:1.08}
-.brand-tag{margin-top:5px;color:#ffdc82;font-size:9px;letter-spacing:2px;font-weight:800;text-transform:uppercase}
-.nav{display:flex;align-items:center;gap:clamp(12px,2vw,28px)}
-.nav a{text-decoration:none;font-size:12px;font-weight:750;white-space:nowrap;color:#f5f2e9}
-.nav a:hover{text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:6px}
-.nav a{display:inline-flex;align-items:center;gap:7px}
-.nav a img{width:19px;height:19px;object-fit:contain}
-.nav .nav-mq{display:inline-grid;place-items:center;width:19px;height:19px;border-radius:50%;background:#fff;color:#2863a5;font-size:10px;font-weight:900}
 
-.nav .nav-call{background:var(--orange);color:#142a43;padding:12px 17px;text-decoration:none}
-.main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.72fr);align-items:center;gap:clamp(28px,5vw,82px);padding:clamp(20px,4vh,48px) 0}
-.intro{min-width:0}
-.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:clamp(12px,2vh,20px);font-size:10px;letter-spacing:2.5px;font-weight:800;text-transform:uppercase;color:#d8e0d7}
-.eyebrow:before{content:"";width:29px;height:2px;background:var(--orange)}
-h1{max-width:720px;margin-bottom:clamp(12px,2vh,20px);font-size:clamp(38px,5.5vw,78px);line-height:.98;letter-spacing:-3px;font-weight:900}
-h1 span{color:var(--orange)}
-.desc{max-width:570px;margin-bottom:clamp(17px,2.6vh,28px);color:var(--muted);font-size:clamp(13px,1.15vw,16px);line-height:1.65}
-.service-list{display:flex;flex-wrap:wrap;gap:9px 18px;margin-bottom:clamp(20px,3vh,32px);max-width:600px}
-.service{display:flex;align-items:center;gap:8px;color:#f8f4eb;font-size:12px;font-weight:650}
-.service:before{content:"✓";display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:rgba(233,121,77,.18);color:var(--orange);font-size:11px;font-weight:900}
-.actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:13px 19px;background:var(--orange);color:#142a43;text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.2px;transition:transform .2s,background .2s}
-.btn:hover{transform:translateY(-2px);background:#ffd36a}
-.btn.secondary{background:transparent;color:var(--ink);border:1px solid rgba(248,244,235,.5)}
-.btn.secondary:hover{border-color:var(--orange)}
-.side{align-self:center;max-width:390px;width:100%;margin-left:auto}
-.side-kicker{color:var(--orange);font-size:10px;font-weight:900;letter-spacing:2.4px;text-transform:uppercase;margin-bottom:12px}
-.side h2{font-size:clamp(23px,2.6vw,36px);line-height:1.08;letter-spacing:-1px;margin-bottom:13px}
-.side-copy{max-width:330px;color:var(--muted);font-size:13px;line-height:1.6;margin-bottom:24px}
-.contact-lines{display:grid;gap:13px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.contact-line{display:flex;align-items:flex-start;gap:12px;font-size:12px;line-height:1.5}
-.contact-line .ico{color:var(--orange);font-size:17px;line-height:1.1;width:18px;flex:none}
-.contact-line a{text-decoration:none}
-.contact-line a:hover{text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:3px}
-.profiles{display:flex;align-items:center;flex-wrap:wrap;gap:18px 23px;margin-top:22px}
-.profiles a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:11px;font-weight:800;color:#f8f4eb;transition:opacity .2s,transform .2s}
-.profiles a:hover{opacity:.8;transform:translateY(-1px)}
-.profiles img{width:23px;height:23px;object-fit:contain;display:block}
-.profile-google img{width:24px;height:24px}
-.profile-yelp img{width:26px;height:26px}
-.profile-mapquest .mq{display:grid;place-items:center;width:23px;height:23px;border-radius:50%;background:#fff;color:#2863a5;font-size:11px;font-weight:900}
-.footer{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-top:14px;border-top:1px solid var(--line);color:#d2d9d0;font-size:10px}
-.footer strong{color:#fff}
-@media(max-width:760px){
- .screen{height:auto;min-height:100svh;overflow:visible;background:linear-gradient(90deg,rgba(16,35,57,.97),rgba(16,35,57,.85)),url("https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=85") center/cover fixed}
- .topbar{align-items:flex-start;flex-direction:column;gap:16px}
- .nav{width:100%;justify-content:space-between;gap:10px;flex-wrap:wrap}
- .nav a{font-size:11px}
- .main{grid-template-columns:1fr;gap:30px;padding:34px 0}
- h1{font-size:clamp(43px,12vw,66px);letter-spacing:-2px}
- .side{margin:0;max-width:none}
- .side-copy{max-width:500px}
- .footer{align-items:flex-start;flex-direction:column;line-height:1.5}
+<style>
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
 }
-@media(max-height:700px) and (min-width:761px){
- .screen{padding-top:14px;padding-bottom:14px}
- .topbar{padding-bottom:10px}
- .brand-mark{width:38px;height:38px}
- .main{padding:14px 0;gap:28px}
- h1{font-size:clamp(34px,4.4vw,58px);margin-bottom:10px}
- .desc{margin-bottom:12px;line-height:1.45}
- .service-list{margin-bottom:14px}
- .contact-lines{gap:9px;padding:12px 0}
- .profiles{margin-top:14px}
+
+.brand {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.brand-name {
+  display: block;
+  font-size: clamp(16px, 1.5vw, 23px);
+  font-weight: 900;
+  letter-spacing: -.5px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: clamp(12px, 1.7vw, 24px);
+}
+
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 750;
+  white-space: nowrap;
+  color: #f5f2e9;
+}
+
+.nav a img {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+}
+
+.nav .nav-mq {
+  display: inline-grid;
+  place-items: center;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #fff;
+  color: #2863a5;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.nav .nav-call {
+  padding: 13px 18px;
+  background: var(--orange);
+  color: #142a43;
+  font-weight: 900;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+
+.nav .nav-call:hover {
+  background: #ffd36a;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+@media (max-width: 1050px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 16px;
+    white-space: normal;
+  }
+
+  .nav {
+    gap: 14px;
+  }
+
+  .nav .nav-call {
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+  }
 }
 </style>
-</head>
-<body>
-<div class="screen">
-  <header class="topbar">
-    <a class="brand" href="#home" aria-label="Mike's Painting and Drywall home">
-      <span class="brand-mark" aria-hidden="true">M</span>
-      <span><span class="brand-name">Mike's Painting and<br>Drywall - Houston</span><span class="brand-tag">Houston · Texas</span></span>
+
+<header class="topbar">
+  <a class="brand" href="#home"
+     aria-label="Mike's Painting and Drywall - Houston home">
+    <span class="brand-name">Mike's Painting and Drywall - Houston</span>
+  </a>
+
+  <nav class="nav" aria-label="Business profiles">
+    <a href="https://maps.app.goo.gl/K1Hcejny8P4wpBv59"
+       target="_blank" rel="noopener">
+      <img src="https://cdn.simpleicons.org/googlemaps/4285F4"
+           alt="" aria-hidden="true">
+      Google Maps ↗
     </a>
-    <nav class="nav" aria-label="Business profiles">
-      <a href="https://maps.app.goo.gl/K1Hcejny8P4wpBv59" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/googlemaps/4285F4" alt="" aria-hidden="true"> Google Maps ↗</a>
-      <a href="https://www.yelp.ie/biz/mikes-painting-and-drywall-houston-2" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/yelp/D32323" alt="" aria-hidden="true"> Yelp ↗</a>
-      <a href="https://www.mapquest.com/us/texas/mikes-painting-and-drywall-646077710" target="_blank" rel="noopener"><span class="nav-mq" aria-hidden="true">M</span> MapQuest ↗</a>
-      <a href="https://www.expatriates.com/cls/63897779.html" target="_blank" rel="noopener">Expatriates ↗</a>
-    </nav>
-  </header>
-  <main class="main" id="home">
-    <section class="intro" id="services">
-      <div class="eyebrow">Houston painting professionals</div>
-      <h1>A fresh coat.<br>A <span>better space.</span></h1>
-      <p class="desc">From clean, crisp paintwork to smooth drywall repairs, make your home or business feel refreshed with dependable service in Houston, Texas.</p>
-      <div class="service-list">
-        <div class="service">Interior &amp; exterior painting</div>
-        <div class="service">Drywall repair &amp; patching</div>
-        <div class="service">Drywall installation</div>
-        <div class="service">Surface preparation</div>
-        <div class="service">Pressure washing</div>
-      </div>
-      <div class="actions">
-        <a class="btn" href="tel:+17134180160">☎ &nbsp; (713) 418-0160</a>
-        <a class="btn secondary" href="https://maps.app.goo.gl/K1Hcejny8P4wpBv59" target="_blank" rel="noopener">Get directions ↗</a>
-      </div>
-    </section>
-    <aside class="side" id="contact">
-      <div class="side-kicker">Let's get started</div>
-      <h2>Your project.<br>Done with care.</h2>
-      <p class="side-copy">Have a room to repaint or drywall that needs attention? Get in touch to discuss the work you need.</p>
-      <div class="contact-lines">
-        <div class="contact-line"><span class="ico">☎</span><span><strong>Call us</strong><br><a href="tel:+17134180160">(713) 418-0160</a></span></div>
-        <div class="contact-line"><span class="ico">⌖</span><span><strong>Houston, Texas</strong><br>Chia St, Houston, TX 77017</span></div>
-      </div>
-      <div class="profiles" aria-label="Business profiles">
-        <a class="profile-google" href="https://maps.app.goo.gl/K1Hcejny8P4wpBv59" target="_blank" rel="noopener" aria-label="View Google Maps profile">
-          <img src="https://cdn.simpleicons.org/googlemaps/4285F4" alt="Google Maps logo"><span>Google Maps ↗</span>
-        </a>
-        <a class="profile-yelp" href="https://www.yelp.ie/biz/mikes-painting-and-drywall-houston-2" target="_blank" rel="noopener" aria-label="View Yelp profile">
-          <img src="https://cdn.simpleicons.org/yelp/D32323" alt="Yelp logo"><span>Yelp ↗</span>
-        </a>
-        <a class="profile-mapquest" href="https://www.mapquest.com/us/texas/mikes-painting-and-drywall-646077710" target="_blank" rel="noopener" aria-label="View MapQuest profile">
-          <span class="mq" aria-hidden="true">M</span><span>MapQuest ↗</span>
-        </a>
-        <a href="https://www.expatriates.com/cls/63897779.html" target="_blank" rel="noopener" aria-label="View Expatriates listing">
-          <span class="mq" aria-hidden="true">↗</span><span>Expatriates ↗</span>
-        </a>
-      </div>
-    </aside>
-  </main>
-  <footer class="footer"><span><strong>Mike's Painting and Drywall - Houston</strong> · Houston, TX 77017</span><span>Painting · Drywall · Repairs</span></footer>
-</div>
-</body>
-</html>
+
+    <a href="https://www.yelp.ie/biz/mikes-painting-and-drywall-houston-2"
+       target="_blank" rel="noopener">
+      <img src="https://cdn.simpleicons.org/yelp/D32323"
+           alt="" aria-hidden="true">
+      Yelp ↗
+    </a>
+
+    <a href="https://www.mapquest.com/us/texas/mikes-painting-and-drywall-646077710"
+       target="_blank" rel="noopener">
+      <span class="nav-mq" aria-hidden="true">M</span>
+      MapQuest ↗
+    </a>
+
+    <a href="https://www.expatriates.com/cls/63897779.html"
+       target="_blank" rel="noopener">
+      Expatriates ↗
+    </a>
+
+    <a class="nav-call" href="tel:+17134180160">
+      ☎ Call Now: (713) 418-0160
+    </a>
+  </nav>
+</header>
