@@ -4,10 +4,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mike's Painting &amp; Drywall | Houston, TX</title>
-<meta name="description" content="Mike's Painting and Drywall provides painting and drywall services in Houston, TX 77017. Call (713) 418-0160 to discuss your project.">
+
+<title>Mike's Painting and Drywall - Houston, TX</title>
+<meta name="description" content="Need painting or drywall services in Houston, TX? Mike's Painting and Drywall offers interior and exterior painting, drywall repair, installation, and surface preparation. Call (713) 418-0160.">
 <meta name="theme-color" content="#142a43">
+<meta name="robots" content="index, follow">
+
+<!-- Replace with the actual website homepage URL -->
+<link rel="canonical" href="https://YOUR-ACTUAL-DOMAIN.com/">
+
+<!-- Social sharing metadata -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mike's Painting and Drywall - Houston, TX">
+<meta property="og:description" content="Interior and exterior painting, drywall repair, installation, and surface preparation in Houston, Texas. Call (713) 418-0160.">
+<meta property="og:url" content="https://YOUR-ACTUAL-DOMAIN.com/">
+<meta property="og:site_name" content="Mike's Painting and Drywall - Houston">
+
 <link rel="preconnect" href="https://images.unsplash.com">
+
+<!-- Local business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HousePainter",
+  "name": "Mike's Painting and Drywall - Houston",
+  "telephone": "+1-713-418-0160",
+  "description": "Painting and drywall services in Houston, Texas, including interior and exterior painting, drywall repair, drywall installation, surface preparation, and pressure washing.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Chia St",
+    "addressLocality": "Houston",
+    "addressRegion": "TX",
+    "postalCode": "77017",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Houston"
+  },
+  "url": "https://YOUR-ACTUAL-DOMAIN.com/"
+}
+</script>
+
 <style>
 :root {
   --ink: #fffdf8;
@@ -43,7 +81,7 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: clamp(18px, 3vh, 32px) clamp(20px, 5vw, 78px);
+  padding: clamp(18px,3vh,32px) clamp(20px,5vw,78px);
   background:
     linear-gradient(90deg,
       rgba(16,35,57,.98) 0%,
@@ -88,7 +126,7 @@ a {
 
 .brand-name {
   display: block;
-  font-size: clamp(15px, 1.45vw, 21px);
+  font-size: clamp(15px,1.45vw,21px);
   font-weight: 900;
   letter-spacing: -.5px;
   line-height: 1.15;
@@ -109,7 +147,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: clamp(12px, 1.5vw, 22px);
+  flex-wrap: wrap;
+  gap: clamp(12px,1.5vw,22px);
 }
 
 .nav a {
@@ -148,7 +187,6 @@ a {
   font-weight: 900;
 }
 
-/* CALL BUTTON IN NAVBAR */
 .nav .nav-call {
   display: inline-flex;
   align-items: center;
@@ -202,6 +240,7 @@ a {
   content: "";
   width: 29px;
   height: 2px;
+  flex: none;
   background: var(--orange);
 }
 
@@ -361,7 +400,7 @@ h1 span {
   text-underline-offset: 3px;
 }
 
-/* BUSINESS PROFILE LINKS */
+/* BUSINESS PROFILES */
 .profiles {
   display: flex;
   align-items: center;
@@ -431,7 +470,7 @@ h1 span {
   color: #fff;
 }
 
-/* TABLET AND MOBILE */
+/* TABLET */
 @media (max-width: 1050px) {
   .topbar {
     align-items: flex-start;
@@ -442,11 +481,11 @@ h1 span {
   .nav {
     width: 100%;
     justify-content: flex-start;
-    flex-wrap: wrap;
     gap: 14px;
   }
 }
 
+/* MOBILE */
 @media (max-width: 760px) {
   .screen {
     height: auto;
@@ -522,6 +561,7 @@ h1 span {
   }
 
   h1 {
+    font-size: clamp(39px,11vw,58px);
     letter-spacing: -1.5px;
   }
 }
@@ -571,8 +611,8 @@ h1 span {
 }
 </style>
 </head>
-<body>
 
+<body>
 <div class="screen">
 
   <header class="topbar">
@@ -615,7 +655,7 @@ h1 span {
     <section class="intro" id="services">
       <div class="eyebrow">Houston painting professionals</div>
 
-      <h1>A fresh coat.<br>A <span>better space.</span></h1>
+      <h1>Painting &amp; Drywall Services in <span>Houston, TX</span></h1>
 
       <p class="desc">
         From clean, crisp paintwork to smooth drywall repairs, make your home or business feel refreshed with dependable service in Houston, Texas.
@@ -649,7 +689,7 @@ h1 span {
 
       <div class="contact-lines">
         <div class="contact-line">
-          <span class="ico">☎</span>
+          <span class="ico" aria-hidden="true">☎</span>
           <span>
             <strong>Call us</strong><br>
             <a href="tel:+17134180160">(713) 418-0160</a>
@@ -657,7 +697,7 @@ h1 span {
         </div>
 
         <div class="contact-line">
-          <span class="ico">⌖</span>
+          <span class="ico" aria-hidden="true">⌖</span>
           <span>
             <strong>Houston, Texas</strong><br>
             Chia St, Houston, TX 77017
@@ -668,12 +708,12 @@ h1 span {
       <div class="profiles" aria-label="Business profiles">
 
         <a class="profile-google" href="https://maps.app.goo.gl/K1Hcejny8P4wpBv59" target="_blank" rel="noopener" aria-label="View Google Maps profile">
-          <img src="https://cdn.simpleicons.org/googlemaps/4285F4" alt="Google Maps logo">
+          <img src="https://cdn.simpleicons.org/googlemaps/4285F4" alt="" aria-hidden="true">
           <span>Google Maps ↗</span>
         </a>
 
         <a class="profile-yelp" href="https://www.yelp.ie/biz/mikes-painting-and-drywall-houston-2" target="_blank" rel="noopener" aria-label="View Yelp profile">
-          <img src="https://cdn.simpleicons.org/yelp/D32323" alt="Yelp logo">
+          <img src="https://cdn.simpleicons.org/yelp/D32323" alt="" aria-hidden="true">
           <span>Yelp ↗</span>
         </a>
 
@@ -698,6 +738,5 @@ h1 span {
   </footer>
 
 </div>
-
 </body>
 </html>
